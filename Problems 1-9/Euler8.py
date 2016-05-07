@@ -1,6 +1,6 @@
 def main():
     # open the file and read the data (newlines removed)
-    infile = open("./Resources/problem8.txt")
+    infile = open("./Problems 1-9/problem8.txt")
     number = infile.read().replace('\n', '')
 
     # for the max found

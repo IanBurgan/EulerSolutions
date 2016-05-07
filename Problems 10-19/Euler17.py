@@ -1,4 +1,4 @@
-# not the best solution but works to solve the problem.
+# Not the best solution but works to solve the problem.
 # One of my least favorite so far.
 
 def main():

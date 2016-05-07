@@ -1,6 +1,6 @@
 def main():
     # open the file and read the data
-    infile = open("./Resources/problem11.txt")
+    infile = open("./Problems 10-19/problem11.txt")
     grid = infile.read().split('\n')
     for i in range(len(grid)):
         grid[i] = grid[i].split()
@@ -32,7 +32,7 @@ def main():
                     prod = int(grid[row][num]) * int(grid[row + 1][num - 1]) * int(grid[row + 2][num - 2]) * int(grid[row + 3][num - 3])
                     if prod > largest:
                         largest = prod
-                        
+
     infile.close()
 
     print(largest)

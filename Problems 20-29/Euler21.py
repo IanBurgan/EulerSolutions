@@ -1,4 +1,4 @@
-import math
+from math import sqrt
 
 def main():
     total = 0
@@ -14,11 +14,12 @@ def main():
 
 def sumfactors(x):
     total = 1
-    for i in range(2, int(math.sqrt(x) + 1)):
+    for i in range(2, int(sqrt(x) + 1)):
         # add all factors found to the total
         if x % i == 0:
             total += i
-            total += x // i
+            if i != x // i:
+                total += x // i
     return total
 
 main()

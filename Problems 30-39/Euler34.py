@@ -17,11 +17,11 @@ def main():
     print(total)
 
 def check(num, facts):
-    string = str(num)
     total = 0
-
-    for i in string:
-        total += facts[int(i)]
+    num2 = num
+    while num2 > 0:
+        total += facts[num2 % 10]
+        num2 = num2 // 10
 
     if num == total:
         return True

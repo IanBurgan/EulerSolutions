@@ -2,7 +2,7 @@ from math import sqrt
 
 def main():
     # generate triangle numbers and test each
-    n = 40755
+    n = 286
     num = n * (n + 1) // 2
     while not test(num):
         n += 1

@@ -6,8 +6,7 @@ def main():
 
     print(total)
 
-def factorial(x):
-    num = x
+def factorial(num):
     total = 1
     while num > 1:
         total *= num

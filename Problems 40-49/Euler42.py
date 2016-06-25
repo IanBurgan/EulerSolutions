@@ -24,6 +24,7 @@ def main():
 
     print(answer)
 
+# uses ord for char numbers
 def wordnum(word):
     total = 0
 

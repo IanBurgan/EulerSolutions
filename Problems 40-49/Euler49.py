@@ -25,8 +25,7 @@ def main():
 
 def sieve(limit):
     primes = [True] * limit
-    if limit > 1:
-        primes[0], primes[1] = False, False
+    primes[0], primes[1] = False, False
 
     # eliminate all multiples of 2
     for i in range(4, len(primes), 2):

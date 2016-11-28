@@ -1,5 +1,4 @@
 def main():
-
     answer = 0
     triangles = set([])
     # generate triangle numbers

@@ -3,7 +3,6 @@
 int sameDigits(int a, int b) {
   int aDigits[10] = { 0 };
   int bDigits[10] = { 0 };
-  int min;
 
   if (b < a) {
     int temp = a;
@@ -36,7 +35,7 @@ int main() {
   for (int i = 100000; i < 1000000 / 6; i++) {
     if (sameDigits(i, 2 * i) && sameDigits(i, 3 * i) && sameDigits(i, 4 * i)) {
       if (sameDigits(i, 5 * i) && sameDigits(i, 6 * i)) {
-        printf("%d\n", i);  
+        printf("%d\n", i);
       }
     }
   }
